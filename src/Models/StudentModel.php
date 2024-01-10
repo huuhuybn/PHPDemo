@@ -1,6 +1,7 @@
 <?php
 // là khái niệm đưa ra để quản lý mã nguồn
 namespace model\Models;
+
 class StudentModel { // StudentModel : tên của class - trùng với tên file
     // properties  : thuộc tính, biến
     public $name; // có thể được gọi hoặc truy cập từ bên ngoài
@@ -38,6 +39,7 @@ class StudentModel { // StudentModel : tên của class - trùng với tên file
         echo  'Detruct';
         // hàm được gọi khi không còn sử dụng đối tượng này nữa
         // gọi câu lệnh tên là : unset
+        // GC - auto
     }
 
     public function __contruct2($name,$age){

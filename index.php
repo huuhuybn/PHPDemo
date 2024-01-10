@@ -1,6 +1,13 @@
 <?php
-namespace model\Models; // namespace rút gọn !!!
-include './Models/StudentModel.php';
+require  'vendor/autoload.php'; // khai bao autoload
+use huuhuy\php\People; // include class People
+use model\Models\StudentModel;
+
+$people = new People();
+$people->name = "HUY";
+$people->address = "Binh nguyen vo tan";
+$people->print();
+
 // Khỏi tạo 1 instance của StudentModel
 $sv = new StudentModel("Huy Nguyen",
     "34","0913360468","HN-NTL");
@@ -15,8 +22,8 @@ $sv2 = new \model\Models\StudentModel("Huy Nguyen 1",
 
 // truy cạp biến name của sv
 echo $sv->name; // có thể truy cập do ở trạng thái public
-//echo $sv->address; lỗi truy cập do biến ở trạng thái private
-//echo $sv->email; lỗi truy cập do biến ở protected : khác thư mục
+//echo $sv->address; //lỗi truy cập do biến ở trạng thái private
+//echo $sv->email; //lỗi truy cập do biến ở protected : khác thư mục
 
 // gọi phương thức trong StudentModel
 $sv->displayInfo();
