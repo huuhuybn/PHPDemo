@@ -2,6 +2,7 @@
 require  'vendor/autoload.php'; // khai bao autoload
  // include class People
 use Huuhuy\PhpDemo\People;
+// \Models\ trùng với tên thư mục chứa StudentModel
 use Huuhuy\PhpDemo\Models\StudentModel;
 $people = new People();
 $people->name = "HUY";
