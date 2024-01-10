@@ -1,6 +1,6 @@
 <?php
 // là khái niệm đưa ra để quản lý mã nguồn
-namespace model\Models;
+namespace Huuhuy\PhpDemo\Models;
 
 class StudentModel { // StudentModel : tên của class - trùng với tên file
     // properties  : thuộc tính, biến

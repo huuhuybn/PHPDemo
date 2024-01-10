@@ -1,8 +1,8 @@
 <?php
 require  'vendor/autoload.php'; // khai bao autoload
-use huuhuy\php\People; // include class People
-use model\Models\StudentModel;
-
+ // include class People
+use Huuhuy\PhpDemo\People;
+use Huuhuy\PhpDemo\Models\StudentModel;
 $people = new People();
 $people->name = "HUY";
 $people->address = "Binh nguyen vo tan";
@@ -17,7 +17,7 @@ $sv1 = new StudentModel("Huy Nguyen 1",
     "33","0913360468","HN-NTL");
 
 // gọi class mà ko phân biệt chữ hoa thường (not recommended)
-$sv2 = new \model\Models\StudentModel("Huy Nguyen 1",
+$sv2 = new StudentModel("Huy Nguyen 1",
     "33","0913360468","HN-NTL");
 
 // truy cạp biến name của sv

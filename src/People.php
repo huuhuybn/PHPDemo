@@ -1,5 +1,5 @@
 <?php
-namespace huuhuy\php;
+namespace Huuhuy\PhpDemo;
 class People
 {
    public $name;
